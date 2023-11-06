@@ -1,7 +1,10 @@
 runtime: python39
 
+env_variables:
+  BUCKET_NAME: "fani-project"
+
 handlers:
-- url: /
+- url: https://storage.googleapis.com/fani-bucket/profil.jpg
   static_files: www/index.html
   upload: www/index.html
 
